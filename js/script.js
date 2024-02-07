@@ -9,7 +9,7 @@ let resultElement = document.querySelector(".js-result");
 formElement.addEventListener("submit", (event) => {
   event.preventDefault();
 
-  let amount = amountElement.value;
+  let amount = +amountElement.value;
   let currency = currencyElement.value;
   let result = resultElement.value;
 
@@ -25,5 +25,5 @@ formElement.addEventListener("submit", (event) => {
       break;
   }
 
-  resultElement.innerText = result.toFixed(2);
+  resultElement.innerHTML = `${amount.toFixed(2)} PLN = ${result.toFixed(2)} ${currency}`;
 });
