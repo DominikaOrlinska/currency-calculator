@@ -11,5 +11,9 @@ html {
   .body {
     font-family: "Lato", sans-serif;
     background-color: rgb(249, 249, 237);
+    background-image: url("../images/background-image.jpg");
+    background-position: center;
+    background-size: 500px 500px;
+    background-repeat: no-repeat;
   }
   
